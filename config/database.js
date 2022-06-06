@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
       database: env('DATABASE_NAME', 'healight'),
       user: env('DATABASE_USERNAME', 'postgres'),
       password: env('DATABASE_PASSWORD', 'cydoniasun'),
-      ssl: env('SSL', false)
+      ssl: env.bool('SSL', false)
     },
   },
 });

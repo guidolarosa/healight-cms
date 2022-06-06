@@ -1,0 +1,49 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::associate.associate.find"
+    },
+    {
+      "action": "api::equipment.equipment.find"
+    },
+    {
+      "action": "api::equipment.equipment.findOne"
+    },
+    {
+      "action": "api::global.global.find"
+    },
+    {
+      "action": "api::homepage.homepage.find"
+    },
+    {
+      "action": "api::main-navigation.main-navigation.find"
+    },
+    {
+      "action": "api::maker.maker.find"
+    },
+    {
+      "action": "api::maker.maker.findOne"
+    },
+    {
+      "action": "api::post.post.find"
+    },
+    {
+      "action": "api::post.post.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}
