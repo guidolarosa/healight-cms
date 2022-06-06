@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_links_default_links",
+  "info": {
+    "displayName": "DefaultLink",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

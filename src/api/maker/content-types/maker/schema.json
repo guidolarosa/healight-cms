@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "makers",
+  "info": {
+    "singularName": "maker",
+    "pluralName": "makers",
+    "displayName": "Maker"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::equipment.equipment"
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

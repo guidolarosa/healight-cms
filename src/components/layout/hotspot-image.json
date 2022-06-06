@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_layout_hotspot_images",
+  "info": {
+    "displayName": "HotspotImage",
+    "icon": "fire-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "HotsposLocations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.equipment-hotspot"
+    }
+  }
+}

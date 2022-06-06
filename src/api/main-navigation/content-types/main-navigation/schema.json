@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_navigations",
+  "info": {
+    "singularName": "main-navigation",
+    "pluralName": "main-navigations",
+    "displayName": "MainNavigation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MainNavigationLinks": {
+      "displayName": "DefaultLink",
+      "type": "component",
+      "repeatable": true,
+      "component": "links.default-link"
+    }
+  }
+}
