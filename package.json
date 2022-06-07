@@ -17,6 +17,7 @@
     "pg": "^8.6.0",
     "pg-connection-string": "^2.5.0",
     "strapi-plugin-config-sync": "^1.0.1",
+    "strapi-plugin-ezforms": "^0.0.7",
     "strapi-plugin-migrations": "^1.0.4"
   },
   "author": {

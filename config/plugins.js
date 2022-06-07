@@ -20,5 +20,20 @@ module.exports = ({ env }) => ({
             delete: {},
           },
         },
-    }
+    },
+    ezforms:{
+        config:{
+          captchaProvider: {
+            name: 'none',
+            config: {}
+          },
+          notificationProviders: [
+            // {
+            //   name: 'notificationProvider',
+            //   enabled: true,
+            //   config: {}
+            // }
+          ]
+        }
+      }
 })
