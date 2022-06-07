@@ -10,15 +10,15 @@ module.exports = {
         config: {
           provider: 'cloudinary',
           providerOptions: {
-            cloud_name: env('healight'),
-            api_key: env('385645811679574'),
-            api_secret: env('V8fxms3ZxN6HflANDBDfwAYSk20'),
+            cloud_name: env('CLOUDINARY_NAME'),
+            api_key: env('CLOUDINARY_API_KEY'),
+            api_secret: env('CLOUDINARY_API_SECRET'),
           },
-          actionOptions: {
-            upload: {},
-            uploadStream: {},
-            delete: {},
-          },
+        //   actionOptions: {
+        //     upload: {},
+        //     uploadStream: {},
+        //     delete: {},
+        //   },
         },
     },
 }
