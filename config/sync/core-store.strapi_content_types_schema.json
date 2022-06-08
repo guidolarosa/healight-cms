@@ -837,6 +837,224 @@
       "plugin": "upload",
       "globalId": "UploadFile"
     },
+    "plugin::ezforms.submission": {
+      "info": {
+        "tableName": "submission",
+        "singularName": "submission",
+        "pluralName": "submissions",
+        "displayName": "Form Submissions",
+        "description": "A Place for all your form submissions",
+        "kind": "collectionType"
+      },
+      "options": {
+        "draftAndPublish": false
+      },
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true
+        },
+        "content-type-builder": {
+          "visible": false
+        }
+      },
+      "attributes": {
+        "score": {
+          "type": "string",
+          "min": 1,
+          "max": 50,
+          "configurable": false
+        },
+        "data": {
+          "type": "json",
+          "configurable": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "kind": "collectionType",
+      "__schema__": {
+        "info": {
+          "tableName": "submission",
+          "singularName": "submission",
+          "pluralName": "submissions",
+          "displayName": "Form Submissions",
+          "description": "A Place for all your form submissions",
+          "kind": "collectionType"
+        },
+        "options": {
+          "draftAndPublish": false
+        },
+        "pluginOptions": {
+          "content-manager": {
+            "visible": true
+          },
+          "content-type-builder": {
+            "visible": false
+          }
+        },
+        "attributes": {
+          "score": {
+            "type": "string",
+            "min": 1,
+            "max": 50,
+            "configurable": false
+          },
+          "data": {
+            "type": "json",
+            "configurable": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "submission",
+      "connection": "default",
+      "uid": "plugin::ezforms.submission",
+      "plugin": "ezforms",
+      "collectionName": "ezforms_submission",
+      "globalId": "EzformsSubmission"
+    },
+    "plugin::ezforms.recipient": {
+      "info": {
+        "tableName": "recipients",
+        "singularName": "recipient",
+        "pluralName": "recipients",
+        "displayName": "Notification Recipients",
+        "description": "List of Notification Recipients",
+        "kind": "collectionType"
+      },
+      "options": {
+        "draftAndPublish": false
+      },
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true
+        },
+        "content-type-builder": {
+          "visible": false
+        }
+      },
+      "attributes": {
+        "name": {
+          "type": "string",
+          "min": 1,
+          "max": 50,
+          "configurable": false
+        },
+        "email": {
+          "type": "string",
+          "min": 1,
+          "max": 50,
+          "configurable": false
+        },
+        "number": {
+          "type": "string",
+          "min": 1,
+          "max": 50,
+          "configurable": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "kind": "collectionType",
+      "__schema__": {
+        "info": {
+          "tableName": "recipients",
+          "singularName": "recipient",
+          "pluralName": "recipients",
+          "displayName": "Notification Recipients",
+          "description": "List of Notification Recipients",
+          "kind": "collectionType"
+        },
+        "options": {
+          "draftAndPublish": false
+        },
+        "pluginOptions": {
+          "content-manager": {
+            "visible": true
+          },
+          "content-type-builder": {
+            "visible": false
+          }
+        },
+        "attributes": {
+          "name": {
+            "type": "string",
+            "min": 1,
+            "max": 50,
+            "configurable": false
+          },
+          "email": {
+            "type": "string",
+            "min": 1,
+            "max": 50,
+            "configurable": false
+          },
+          "number": {
+            "type": "string",
+            "min": 1,
+            "max": 50,
+            "configurable": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "recipient",
+      "connection": "default",
+      "uid": "plugin::ezforms.recipient",
+      "plugin": "ezforms",
+      "collectionName": "ezforms_recipient",
+      "globalId": "EzformsRecipient"
+    },
     "plugin::i18n.locale": {
       "info": {
         "singularName": "locale",

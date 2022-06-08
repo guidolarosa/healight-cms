@@ -488,6 +488,87 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "plugin::ezforms.recipient",
+      "properties": {
+        "fields": [
+          "name",
+          "email",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "plugin::ezforms.recipient",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "plugin::ezforms.recipient",
+      "properties": {
+        "fields": [
+          "name",
+          "email",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "plugin::ezforms.recipient",
+      "properties": {
+        "fields": [
+          "name",
+          "email",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "plugin::ezforms.submission",
+      "properties": {
+        "fields": [
+          "score",
+          "data"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "plugin::ezforms.submission",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "plugin::ezforms.submission",
+      "properties": {
+        "fields": [
+          "score",
+          "data"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "plugin::ezforms.submission",
+      "properties": {
+        "fields": [
+          "score",
+          "data"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "plugin::users-permissions.user",
       "properties": {
         "fields": [

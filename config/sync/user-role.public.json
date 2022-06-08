@@ -34,6 +34,12 @@
       "action": "api::post.post.findOne"
     },
     {
+      "action": "plugin::email.email.send"
+    },
+    {
+      "action": "plugin::ezforms.submitController.index"
+    },
+    {
       "action": "plugin::users-permissions.auth.callback"
     },
     {
