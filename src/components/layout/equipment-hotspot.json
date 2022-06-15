@@ -2,15 +2,23 @@
   "collectionName": "components_layout_equipment_hotspots",
   "info": {
     "displayName": "EquipmentHotspot",
-    "icon": "bullseye"
+    "icon": "bullseye",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "TooltipContent": {
       "type": "richtext"
     },
-    "TooltipPosition": {
-      "type": "json"
+    "TooltipPositionX": {
+      "type": "decimal",
+      "max": 1,
+      "min": 0
+    },
+    "TooltipPositionY": {
+      "type": "decimal",
+      "max": 1,
+      "min": 0
     }
   }
 }

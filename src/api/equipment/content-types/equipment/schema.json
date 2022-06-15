@@ -44,6 +44,39 @@
     },
     "ShortDescription": {
       "type": "string"
+    },
+    "IsFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "IsSpecialFeature": {
+      "type": "boolean",
+      "default": false
+    },
+    "Maker": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::maker.maker",
+      "inversedBy": "Products"
+    },
+    "LongDescription": {
+      "type": "richtext"
+    },
+    "Gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Features": {
+      "type": "richtext"
+    },
+    "Accessories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.equipment-accessory"
     }
   }
 }

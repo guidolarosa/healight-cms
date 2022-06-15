@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_equipment_accessories",
+  "info": {
+    "displayName": "EquipmentAccessory",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "maker",
     "pluralName": "makers",
-    "displayName": "Maker"
+    "displayName": "Maker",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,15 +18,16 @@
     "Products": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::equipment.equipment"
+      "target": "api::equipment.equipment",
+      "mappedBy": "Maker"
     },
     "Logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

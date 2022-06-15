@@ -6,6 +6,9 @@ module.exports = ({ env }) => ({
             migrationFolderPath : 'migrations'
         },
     },
+    "import-export-entries": {
+        enabled: true,
+    },
     upload: {
         config: {
           provider: 'cloudinary',
